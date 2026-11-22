@@ -74,3 +74,54 @@ h1{
 
 }
 
+.weather-box{
+    padding: 20px;
+    color: white;
+
+}
+
+.weather-icon{
+    font-size: 75px;
+    margin: 15px;
+
+}
+
+#temperature{
+    font-size: 55px;
+    color: #2196F3;
+    margin: 10px;
+
+}
+
+#description{
+    color: #666;
+    font-size: 18px;
+
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 30px;
+
+}
+
+.detail-card{
+    flex: 1;
+    background: white;
+    padding: 20px 10px;
+    border-radius: 12px;
+
+}
+
+.detail-card p{
+    color: #777;
+    margin: 8px 0;
+    font-size: 14px;
+
+}
+
+
+
+
