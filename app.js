@@ -30,6 +30,12 @@ async function getWeather() {
 
         const data = await response.json();
 
+        updateMap(
+                data.location.lat,
+                data.location.lon,
+                data.location.name
+        );
+
 
         // Main weather data
         document.getElementById("cityName").innerText = `${data.location.name}, ${data.location.country}`;
@@ -91,3 +97,34 @@ window.onload = () => {
     document.getElementById("cityinput").value = "Colombo";
     getWeather();
 };
+
+
+
+// Create Map
+
+let map = L.map("map").setView([6.9271, 79.8612], 10);
+
+
+// Map Tiles
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap"
+}).addTo(map);
+
+
+// Location Marker
+
+let marker = L.marker([6.9271, 79.8612]).addTo(map);
+
+marker.bindPopup("Colombo").openPopup();
+
+
+// Update Map Location
+
+function updateMap(lat, lon, cityName) {
+
+    map.setView([lat, lon], 10);
+    marker.setLatLng([lat, lon]);
+    marker.bindPopup(cityName).openPopup();
+
+}
