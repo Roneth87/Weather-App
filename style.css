@@ -124,4 +124,37 @@ h1{
 
 
 
+.forecast-title{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.forecast{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.forecast-card{
+    background: #f1f6fb;
+    padding: 15px 5px;
+    border-radius: 12px;
+}
+
+.forecast-card p {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.forecast-icon {
+    font-size: 25px;
+}
+
+#message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+
 
