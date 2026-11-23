@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body{
+.body {
     font-family: Arial, sans-serif;
     background-color: black;
     min-height: 100vh;
@@ -17,7 +17,7 @@
 
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     background-color: black;
@@ -27,18 +27,18 @@
 
 }
 
-h1{
+h1 {
     color: white;
     margin-bottom: 10px;
 
 }
 
-.subtitle{
-    color: #777;
+.subtitle {
+    color: white;
     margin-bottom: 25px;
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -48,8 +48,8 @@ h1{
 
 }
 
-.search-bar input{
-    flex: 1;    
+.search-bar input {
+    flex: 1;
     padding: 13px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -58,7 +58,7 @@ h1{
 
 }
 
-.search-bar button{
+.search-bar button {
     padding: 13px 20px;
     background: #2196F3;
     color: white;
@@ -66,40 +66,42 @@ h1{
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
+    transition: 0.3s;
 
 }
 
-.search-box button:hover{
+.search-bar button:hover {
     background: #1565C0;
+    transform: translateY(-8px);
 
 }
 
-.weather-box{
+.weather-box {
     padding: 20px;
     color: white;
 
 }
 
-.weather-icon{
+.weather-icon {
     font-size: 75px;
     margin: 15px;
 
 }
 
-#temperature{
+#temperature {
     font-size: 55px;
     color: #2196F3;
     margin: 10px;
 
 }
 
-#description{
-    color: #666;
+#description {
+    color: white;
     font-size: 18px;
 
 }
 
-.details{
+.details {
     display: flex;
     justify-content: space-around;
     gap: 15px;
@@ -107,54 +109,68 @@ h1{
 
 }
 
-.detail-card{
+.detail-card {
     flex: 1;
     background: white;
+    color: black;
     padding: 20px 10px;
     border-radius: 12px;
 
 }
 
-.detail-card p{
-    color: #777;
+.detail-card h3 {
+    color: black;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.detail-card p {
+    color: black;
     margin: 8px 0;
     font-size: 14px;
 
 }
 
 
-
-.forecast-title{
+.forecast-title {
     margin-top: 35px;
     margin-bottom: 20px;
 }
 
-.forecast{
+.forecast {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
-.forecast-card{
+.forecast-card {
     background: #f1f6fb;
+    color: black;
     padding: 15px 5px;
     border-radius: 12px;
+    transition: 0.3s;
 }
 
+.forecast-card:hover {
+    transform: translateY(-8px);
+
+}
+
+
 .forecast-card p {
+    color: black;
     font-size: 13px;
     margin: 8px 0;
+
 }
 
 .forecast-icon {
     font-size: 25px;
+
 }
 
 #message {
     color: red;
     margin-bottom: 10px;
+
 }
-
-
-
-
